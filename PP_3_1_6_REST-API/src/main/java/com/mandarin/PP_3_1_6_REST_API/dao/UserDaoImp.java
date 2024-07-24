@@ -39,7 +39,8 @@ public class UserDaoImp implements UserDao {
 
     @Override
     public User getUser(long id) {
-        return entityManager.find(User.class, id);
+        return entityManager.createQuery("select distinct a from User a where a.id = :id", User.class)
+                .setParameter("id", id).getSingleResult();
     }
 
     @Override

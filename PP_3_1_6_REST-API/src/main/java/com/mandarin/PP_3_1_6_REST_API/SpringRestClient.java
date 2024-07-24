@@ -12,7 +12,7 @@ public class SpringRestClient {
     private static final String GET_EMPLOYEES_ENDPOINT_URL = "http://localhost:8080/api/users";
     private static final String GET_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/users/{id}";
     private static final String CREATE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/users";
-    private static final String UPDATE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/users/{id}";
+    private static final String UPDATE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/users";
     private static final String DELETE_EMPLOYEE_ENDPOINT_URL = "http://localhost:8080/api/users/{id}";
     private static RestTemplate restTemplate = new RestTemplate();
 
@@ -25,16 +25,16 @@ public class SpringRestClient {
         springRestClient.createUser();
 
         // Step 2: get new created employee from step1
-        //springRestClient.getUserById();
+        springRestClient.getUserById();
 
         // Step3: get all employees
         springRestClient.getUsers();
 
         // Step4: Update employee with id = 3
-        //springRestClient.updateUser();
+        springRestClient.updateUser();
 
         // Step5: Delete employee with id = 3
-        //springRestClient.deleteUser();
+        springRestClient.deleteUser();
     }
     private void getUsers() {
 
@@ -61,7 +61,7 @@ public class SpringRestClient {
 
     private void createUser() {
 
-        User newUser = new User("James", "Brown", (byte) 55);
+        User newUser = new User(3L,"James", "Brown", (byte) 55);
 
         RestTemplate restTemplate = new RestTemplate();
         User result = restTemplate.postForObject(CREATE_EMPLOYEE_ENDPOINT_URL, newUser, User.class);
@@ -71,10 +71,10 @@ public class SpringRestClient {
 
     private void updateUser() {
         Map<String, String> params = new HashMap<String, String>();
-        params.put("id", "3");
-        User updatedUser = new User("Thomas", "Shelby", (byte) 55);
+        //params.put("id", "3");
+        User updatedUser = new User(3L,"Thomas", "Shelby", (byte) 55);
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.put(UPDATE_EMPLOYEE_ENDPOINT_URL, updatedUser, params);
+        restTemplate.put(UPDATE_EMPLOYEE_ENDPOINT_URL, updatedUser);
     }
 
     private void deleteUser() {
