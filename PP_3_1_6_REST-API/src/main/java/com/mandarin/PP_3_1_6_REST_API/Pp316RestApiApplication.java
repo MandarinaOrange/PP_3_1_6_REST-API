@@ -8,8 +8,12 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class Pp316RestApiApplication {
 
-	public static void main(String[] args) {
+	public Pp316RestApiApplication()  {
+	}
+
+	public static void main(String[] args)  {
 		SpringApplication.run(Pp316RestApiApplication.class, args);
+
 	}
 
 	@Bean
@@ -17,4 +21,27 @@ public class Pp316RestApiApplication {
 		return new RestTemplate();
 	}
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

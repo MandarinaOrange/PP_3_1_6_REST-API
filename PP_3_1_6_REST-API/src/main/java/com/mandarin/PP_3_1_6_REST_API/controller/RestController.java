@@ -20,18 +20,25 @@ public class RestController {
     }
 
     @PostMapping("/users")
-    public void addUser(User user) {
+    public User addUser(@RequestBody User user) {
         userService.saveUser(user);
+        return user;
     }
 
     @PutMapping("/users")
-    public void changeUser(User user) {
+    public User changeUser(@RequestBody User user) {
         userService.updateUser(user);
+        return user;
     }
 
     @GetMapping("/users/{id}")
     public User getUser(@PathVariable long id) {
         return userService.getById(id);
+    }
+
+    @DeleteMapping("/users/{id}")
+    public void deleteUser(@PathVariable long id) {
+        userService.deleteUser(id);
     }
 
 
