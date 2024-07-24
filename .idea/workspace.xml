@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c6151df-a729-4f90-ba49-8f8a4d76e669" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PP_3_1_6_REST-API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PP_3_1_6_REST-API.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PP_3_1_6_REST-API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/PP_3_1_6_REST-API/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PP_3_1_6_REST-API/src/main/java/com/mandarin/PP_3_1_6_REST_API/Pp316RestApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/PP_3_1_6_REST-API/src/main/java/com/mandarin/PP_3_1_6_REST_API/Pp316RestApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PP_3_1_6_REST-API/src/main/java/com/mandarin/PP_3_1_6_REST_API/controller/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PP_3_1_6_REST-API/src/main/java/com/mandarin/PP_3_1_6_REST_API/controller/RestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PP_3_1_6_REST-API/src/main/java/com/mandarin/PP_3_1_6_REST_API/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/PP_3_1_6_REST-API/src/main/java/com/mandarin/PP_3_1_6_REST_API/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +39,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2jbkH5H9OiljNPGW5MLoi1azVa2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,7 +79,20 @@
       <recent name="C:\Users\79165\Desktop\PP_3_1_6_REST-API\PP_3_1_6_REST-API" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SpringRestClient">
+    <configuration name="SpringRestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mandarin.PP_3_1_6_REST_API.SpringRestClient" />
+      <module name="PP_3_1_6_REST-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mandarin.PP_3_1_6_REST_API.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Pp316RestApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="PP_3_1_6_REST-API" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mandarin.PP_3_1_6_REST_API.Pp316RestApiApplication" />
@@ -90,6 +100,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringRestClient" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +120,7 @@
       <workItem from="1721846709435" duration="1451000" />
       <workItem from="1721848171204" duration="16000" />
       <workItem from="1721848263375" duration="860000" />
-      <workItem from="1721849129209" duration="5168000" />
+      <workItem from="1721849129209" duration="6638000" />
     </task>
     <servers />
   </component>
